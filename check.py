@@ -1,0 +1,5 @@
+a = input()
+b=a.count(a[0])
+print(type(b))
+print(b)
+print(a.isdecimal())

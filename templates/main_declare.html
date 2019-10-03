@@ -1,0 +1,12 @@
+{%extends 'first_declare.html'%}
+{%block content%}
+
+{% for i in range(length) %}
+<h3>宣言した数字：<span>{{num_log[i]}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{eat_log[i]}}</span>eat&nbsp;&nbsp;&nbsp;<span>{{bite_log[i]}}</span>bite</h3>
+{%endfor%}
+{% if eat==3 %}
+<form method="POST" action="/">
+<h1 ><a href="/" style="font-weight:bold;color:gold;background:linear-gradient(45deg,#56cadf,#b856df)">START画面</a></h1>
+</form>
+{% endif %}
+{%endblock%}

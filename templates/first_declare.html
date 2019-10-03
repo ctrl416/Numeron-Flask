@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="{{url_for('static',filename='style.css')}}?201907282355">
+        <title>Numeron Game</title>
+    </head>
+    <body>
+        <h1 class="title">{{title}}</h1>
+        <div class="middle">
+            <form method="POST" action='/main_declare'>                
+                <input type="text" name="user" placeholder="3桁（重複なし）" class="inputcss">
+                <button type="submit" class="submitbtn ">宣言</button>
+            </form>
+          </div>
+            <h1>{{target_num}}</h1>
+            {%block content%}
+
+            
+            {%endblock%}
+</body>
+</html>
